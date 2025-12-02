@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { SiFacebook, SiInstagram } from "@icons-pack/react-simple-icons";
 import Image from "next/image";
 

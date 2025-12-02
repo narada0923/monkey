@@ -1,39 +1,32 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900">
       <main 
-        className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start"
-        aria-label="Homepage content"
+        className="flex flex-col items-center justify-center text-center px-6"
+        aria-label="Coming soon page"
       >
-        <header>
-          <Image
-            className="dark:invert"
-            src="/next.svg"
-            alt="Next.js logo"
-            width={100}
-            height={20}
-            priority
-          />
-        </header>
-        <section className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            Monkey Closet - Online Store
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Built with Next.js, TypeScript, Tailwind CSS, shadcn/ui, and MongoDB.
-          </p>
-        </section>
-        <nav className="flex flex-col gap-4 text-base font-medium sm:flex-row" aria-label="Main navigation">
-          <Button>
-            Get Started
-          </Button>
-          <Button variant="outline">
-            Learn More
-          </Button>
-        </nav>
+        <div className="mb-8">
+          <span className="text-6xl">🐵</span>
+        </div>
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
+          Monkey Closet
+        </h1>
+        <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full mb-8" />
+        <p className="text-2xl md:text-3xl text-zinc-300 font-light mb-4">
+          Coming Soon
+        </p>
+        <p className="text-lg text-zinc-400 max-w-md mb-12">
+          We&apos;re working hard to bring you an amazing online shopping experience. Stay tuned!
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 items-center">
+          <div className="px-6 py-3 bg-zinc-800 rounded-lg border border-zinc-700">
+            <p className="text-zinc-400 text-sm">Get notified when we launch</p>
+            <p className="text-white font-medium">hello@monkeycloset.com</p>
+          </div>
+        </div>
+        <p className="text-zinc-500 text-sm mt-16">
+          © 2024 Monkey Closet. All rights reserved.
+        </p>
       </main>
     </div>
   );

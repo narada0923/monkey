@@ -9,10 +9,10 @@ declare global {
 }
 
 function getMongoUri() {
-  const uri = process.env.MONGODB_URI;
+  const uri = process.env.monkey_MONGODB_URI;
 
   if (!uri) {
-    throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
+    throw new Error('Invalid/Missing environment variable: "monkey_MONGODB_URI"');
   }
 
   return uri;
